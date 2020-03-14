@@ -11,10 +11,16 @@ import { graphql } from "gatsby"
 
 import "./bootstrap.min.css";
 import "./layout.css";
+import Navbar from './Globals/Navbar.js';
+const Layout = ({ children }) => (
+<>
 
-const Layout = ({ children }) => 
-<>{children}</>
-;
+  <Navbar/>
+ {children}
+ 
+ </>
+
+);
 
 
 Layout.propTypes = {
